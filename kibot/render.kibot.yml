@@ -1,0 +1,29 @@
+outputs:
+  # For more information: https://github.com/INTI-CMNB/KiBoM
+  - name: 'render_3d_top'
+    type: 'render_3d'
+    dir: 'img/render/3d'
+    options:
+      download: true
+      output: '%f-top.%x'
+      ray_tracing: true
+      view: top
+
+  - name: 'render_3d_bottom'
+    type: 'render_3d'
+    dir: 'img/render/3d'
+    options:
+      download: true
+      output: '%f-bottom.%x'
+      ray_tracing: true
+      view: bottom
+
+  - name: 'render_3d_30deg'
+    type: 'render_3d'
+    dir: 'img/render/3d'
+    options:
+      download: true
+      output: '%f-30deg.%x'
+      ray_tracing: true
+      rotate_x: 3
+      rotate_z: -2
