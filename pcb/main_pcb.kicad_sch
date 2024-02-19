@@ -2390,6 +2390,10 @@
     (stroke (width 0) (type default))
     (uuid 25c9a7c0-7e81-4d34-b5f6-b32de6cdd0e2)
   )
+  (wire (pts (xy 158.75 105.41) (xy 158.75 107.95))
+    (stroke (width 0) (type default))
+    (uuid 293760fa-c3af-4509-94a3-0cb084b13570)
+  )
   (wire (pts (xy 40.64 196.85) (xy 40.64 187.96))
     (stroke (width 0) (type default))
     (uuid 29da42e4-ae70-49c5-bc32-d481f61b332e)
@@ -3447,6 +3451,31 @@
       (project "main_pcb"
         (path "/6204b7c2-8814-41ee-9243-5078f55f08d4"
           (reference "#PWR015") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 158.75 107.95 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 3bf99d7d-a2df-48da-bc09-e895187e0c97)
+    (property "Reference" "#PWR037" (at 158.75 114.3 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 158.75 113.03 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 158.75 107.95 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 158.75 107.95 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 47ddcf4f-6348-4440-a9b0-0addbb4b082a))
+    (instances
+      (project "main_pcb"
+        (path "/6204b7c2-8814-41ee-9243-5078f55f08d4"
+          (reference "#PWR037") (unit 1)
         )
       )
     )
