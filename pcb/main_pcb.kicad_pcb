@@ -7,6 +7,8 @@
   (paper "A4")
   (layers
     (0 "F.Cu" signal)
+    (1 "In1.Cu" signal)
+    (2 "In2.Cu" signal)
     (31 "B.Cu" signal)
     (32 "B.Adhes" user "B.Adhesive")
     (33 "F.Adhes" user "F.Adhesive")
@@ -38,6 +40,23 @@
   )
 
   (setup
+    (stackup
+      (layer "F.SilkS" (type "Top Silk Screen"))
+      (layer "F.Paste" (type "Top Solder Paste"))
+      (layer "F.Mask" (type "Top Solder Mask") (thickness 0.01))
+      (layer "F.Cu" (type "copper") (thickness 0.035))
+      (layer "dielectric 1" (type "prepreg") (thickness 0.1) (material "FR4") (epsilon_r 4.5) (loss_tangent 0.02))
+      (layer "In1.Cu" (type "copper") (thickness 0.035))
+      (layer "dielectric 2" (type "core") (thickness 1.24) (material "FR4") (epsilon_r 4.5) (loss_tangent 0.02))
+      (layer "In2.Cu" (type "copper") (thickness 0.035))
+      (layer "dielectric 3" (type "prepreg") (thickness 0.1) (material "FR4") (epsilon_r 4.5) (loss_tangent 0.02))
+      (layer "B.Cu" (type "copper") (thickness 0.035))
+      (layer "B.Mask" (type "Bottom Solder Mask") (thickness 0.01))
+      (layer "B.Paste" (type "Bottom Solder Paste"))
+      (layer "B.SilkS" (type "Bottom Silk Screen"))
+      (copper_finish "None")
+      (dielectric_constraints no)
+    )
     (pad_to_mask_clearance 0)
     (pcbplotparams
       (layerselection 0x00010fc_ffffffff)
@@ -1353,7 +1372,7 @@
 
   (footprint "PCM_Espressif:ESP32-H2-MINI-1" (layer "F.Cu")
     (tstamp 7f612ee5-5a56-4c6a-a593-231a737a301b)
-    (at 162.249 51.857)
+    (at 162.11 51.857)
     (descr "ESP32-H2-MINI-1: https://www.espressif.com/sites/default/files/documentation/esp32-h2-mini-1_mini-1u_datasheet_en.pdf")
     (tags "ESP32-H2")
     (property "Sheetfile" "main_pcb.kicad_sch")
@@ -1563,10 +1582,10 @@
       (fill (thermal_gap 0.508) (thermal_bridge_width 0.508))
       (polygon
         (pts
-          (xy 168.849 48.957)
-          (xy 155.649 48.957)
-          (xy 155.649 43.557)
-          (xy 168.849 43.557)
+          (xy 168.71 48.957)
+          (xy 155.51 48.957)
+          (xy 155.51 43.557)
+          (xy 168.71 43.557)
         )
       )
     )
@@ -2474,7 +2493,7 @@
 
   (footprint "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" (layer "F.Cu")
     (tstamp e47a134b-3888-473f-a72f-093b1c39a5a2)
-    (at 152.654 52.705 90)
+    (at 148.463 59.69 90)
     (descr "5.0mm x 5.0mm Addressable RGB LED NeoPixel, https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf")
     (tags "LED RGB NeoPixel PLCC-4 5050")
     (property "Sheetfile" "main_pcb.kicad_sch")
