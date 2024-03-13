@@ -49,12 +49,7 @@
         }
       },
       "diff_pair_dimensions": [],
-      "drc_exclusions": [
-        "items_not_allowed|110938000|84712299|f46732d6-27d0-44d2-9bfd-4cd51b5ddc41|00000000-0000-0000-0000-000000000000",
-        "unconnected_items|125316000|67149000|0d5712d0-1a0c-4677-9eea-9dea3a089f28|aa99fba0-5303-4470-b3d2-9ae8fed98951",
-        "unconnected_items|133956000|67149000|f0e3a5ea-9705-4d28-a70d-fe3067657f54|0d5712d0-1a0c-4677-9eea-9dea3a089f28",
-        "unconnected_items|133956000|71329000|54ecaa3e-c246-4b9a-84f8-44df57172bc6|f0e3a5ea-9705-4d28-a70d-fe3067657f54"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
